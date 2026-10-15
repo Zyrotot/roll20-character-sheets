@@ -733,7 +733,7 @@
                             <div class="sheet-texto" style="padding-top:5px"><input type="text" style="height:35px; width:40px" name="attr_ladinagemmod" value="0"> </div>
                         </div>
                     </div>
-                    <div class="sheet-row">
+                    <div class="sheet-row sheet-subrow">
                         <div class="sheet-col">
                             <button style="margin-top:5px; height:37px" type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Ofício}} {{rolagem=[[1d20+@{oficio}]]}}">
                             <div class="sheet-block" style="line-height:10px; font-size:0.65em; width: 120px;">   
@@ -762,17 +762,17 @@
                         <div class="suboficio">
                             <fieldset class="repeating_oficio">
                                 <div class="sheet-row"  style="margin-top:10px; margin-bottom:10px">
-                                    <button type="roll" style="margin-top:-30px" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Ofício: @{oficiotipo}}} {{rolagem=[[1d20+@{oficiotipo_total}]]}}">
+                                    <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Ofício: @{oficiotipo}}} {{rolagem=[[1d20+@{oficiotipo_total}]]}}">
                                         <div class="sheet-col" style="margin-left:-20px; line-height:10px; font-size:2em"><span style="font-family: dicefontd20"><br>T</span></div>
                                     </button>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left: -5px"><div class="sheet-texto"><input type="text" name="attr_oficiotipo" style="width: 120px; height:35px"></div></div>
-                                    <div class="sheet-col" style="margin-top:-25px; padding-left:10px"><div class="sheet-texto"><input type="text" name="attr_oficiotipo_total" value="(@{oficiotipo_mod}) + (@{nd} + 3) + (@{int_mod})" style="width: 40px; height:35px" disabled="true"></div></div>
-                                    <div class="sheet-col" style="margin-top:-10px; margin-left: -17px; font-size:1.5em"><span>=</span></div>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_oficiotipo_graduacao" value="@{nd} + 3" style="width: 40px; height:35px" disabled="true"></div></div>
-                                    <div class="sheet-col" style="margin-top:-10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_oficiotipo_car" value="@{int_mod}" style="width: 40px; height:35px" disabled="true"></div></div>
-                                    <div class="sheet-col" style="margin-top:-10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_oficiotipo_mod" style="width: 40px; height:35px" value="0"></div></div>
+                                    <div class="sheet-col" style="margin-left: -5px"><div class="sheet-texto"><input type="text" name="attr_oficiotipo" style="width: 100px; height:35px"></div></div>
+                                    <div class="sheet-col" style="padding-left:10px"><div class="sheet-texto"><input type="text" name="attr_oficiotipo_total" value="(@{oficiotipo_mod}) + (@{nd} + 3) + (@{int_mod})" style="width: 40px; height:35px" disabled="true"></div></div>
+                                    <div class="sheet-col" style="margin-top: 10px; margin-left: -17px; font-size:1.5em"><span>=</span></div>
+                                    <div class="sheet-col" style="margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_oficiotipo_graduacao" value="@{nd} + 3" style="width: 40px; height:35px" disabled="true"></div></div>
+                                    <div class="sheet-col" style="margin-top: 10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
+                                    <div class="sheet-col" style="margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_oficiotipo_car" value="@{int_mod}" style="width: 40px; height:35px" disabled="true"></div></div>
+                                    <div class="sheet-col" style="margin-top: 10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
+                                    <div class="sheet-col" style="margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_oficiotipo_mod" style="width: 40px; height:35px" value="0"></div></div>
                                 </div>
                             </fieldset>
                         </div>
@@ -889,7 +889,7 @@
                             <div class="sheet-texto" style="padding-top:5px"><input type="text" style="height:35px; width:40px" name="attr_adestrar_animaismod" value="0"> </div>
                         </div>
                     </div>
-                    <div class="sheet-row" style="margin-left:-1px">
+                    <div class="sheet-row sheet-subrow" style="margin-left:-1px">
                         <div class="sheet-col">
                             <button style="margin-top:5px; height:37px;" type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Atuação}} {{rolagem=[[1d20+@{atuacao}]]}}">
                             <div class="sheet-block" style="line-height:10px; font-size:0.65em; width: 120px;">   
@@ -918,22 +918,22 @@
                         <div class="subatuacao">
                             <fieldset class="repeating_atuacao">
                                 <div class="sheet-row"  style="margin-top:10px; margin-bottom:10px">
-                                    <button type="roll" style="margin-top:-30px" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Atuação: @{atuacaotipo}}} {{rolagem=[[1d20+@{atuacaotipo_total}]]}}">
+                                    <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Atuação: @{atuacaotipo}}} {{rolagem=[[1d20+@{atuacaotipo_total}]]}}">
                                         <div class="sheet-col" style="margin-left:-20px; line-height:10px; font-size:2em"><span style="font-family: dicefontd20"><br>T</span></div>
                                     </button>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left: -5px"><div class="sheet-texto"><input type="text" name="attr_atuacaotipo" style="width: 120px; height:35px"></div></div>
-                                    <div class="sheet-col" style="margin-top:-25px; padding-left:10px"><div class="sheet-texto"><input type="text" name="attr_atuacaotipo_total" value="(@{atuacaotipo_mod}) + (@{nd} + 3) + (@{car_mod})" style="width: 40px; height:35px" disabled="true"></div></div>
-                                    <div class="sheet-col" style="margin-top:-10px; margin-left: -17px; font-size:1.5em"><span>=</span></div>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_atuacaotipo_graduacao" value="@{nd} + 3" style="width: 40px; height:35px" disabled="true"></div></div>
-                                    <div class="sheet-col" style="margin-top:-10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_atuacaotipo_car" value="@{car_mod}" style="width: 40px; height:35px" disabled="true"></div></div>
-                                    <div class="sheet-col" style="margin-top:-10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_atuacaotipo_mod" style="width: 40px; height:35px" value="0"></div></div>
+                                    <div class="sheet-col" style="margin-left: -5px"><div class="sheet-texto"><input type="text" name="attr_atuacaotipo" style="width: 100px; height:35px"></div></div>
+                                    <div class="sheet-col" style="padding-left:10px"><div class="sheet-texto"><input type="text" name="attr_atuacaotipo_total" value="(@{atuacaotipo_mod}) + (@{nd} + 3) + (@{car_mod})" style="width: 40px; height:35px" disabled="true"></div></div>
+                                    <div class="sheet-col" style="margin-top:10px; margin-left: -17px; font-size:1.5em"><span>=</span></div>
+                                    <div class="sheet-col" style="margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_atuacaotipo_graduacao" value="@{nd} + 3" style="width: 40px; height:35px" disabled="true"></div></div>
+                                    <div class="sheet-col" style="margin-top:10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
+                                    <div class="sheet-col" style="margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_atuacaotipo_car" value="@{car_mod}" style="width: 40px; height:35px" disabled="true"></div></div>
+                                    <div class="sheet-col" style="margin-top:10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
+                                    <div class="sheet-col" style="margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_atuacaotipo_mod" style="width: 40px; height:35px" value="0"></div></div>
                                 </div>
                             </fieldset>
                         </div>
                     </div>
-                    <div class="sheet-row" style="margin-top: -14px; margin-left:-1px">
+                    <div class="sheet-row sheet-subrow" style="margin-left:-1px">
                         <div class="sheet-col">
                             <button style="margin-top:5px; height:37px;" type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Conhecimento}} {{rolagem=[[1d20+@{conhecimento}]]}}">
                             <div class="sheet-block" style="line-height:10px; font-size:0.65em; width: 120px;">   
@@ -962,22 +962,22 @@
                         <div class="subconhecimento">
                             <fieldset class="repeating_conhecimento">
                                 <div class="sheet-row"  style="margin-top:10px; margin-bottom:10px">
-                                    <button type="roll" style="margin-top:-30px" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Conhecimento: @{conhecimentotipo}}} {{rolagem=[[1d20+@{conhecimentotipo_total}]]}}">
+                                    <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Conhecimento: @{conhecimentotipo}}} {{rolagem=[[1d20+@{conhecimentotipo_total}]]}}">
                                         <div class="sheet-col" style="margin-left:-20px; line-height:10px; font-size:2em"><span style="font-family: dicefontd20"><br>T</span></div>
                                     </button>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left: -5px"><div class="sheet-texto"><input type="text" name="attr_conhecimentotipo" style="width: 120px; height:35px"></div></div>
-                                    <div class="sheet-col" style="margin-top:-25px; padding-left:10px"><div class="sheet-texto"><input type="text" name="attr_conhecimentotipo_total" value="(@{conhecimentotipo_mod}) + (@{nd} + 3) + (@{int_mod})" style="width: 40px; height:35px" disabled="true"></div></div>
-                                    <div class="sheet-col" style="margin-top:-10px; margin-left: -17px; font-size:1.5em"><span>=</span></div>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_conhecimentotipo_graduacao" value="@{nd} + 3" style="width: 40px; height:35px" disabled="true"></div></div>
-                                    <div class="sheet-col" style="margin-top:-10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_conhecimentotipo_int" value="@{int_mod}" style="width: 40px; height:35px" disabled="true"></div></div>
-                                    <div class="sheet-col" style="margin-top:-10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
-                                    <div class="sheet-col" style="margin-top:-25px; margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_conhecimentotipo_mod" style="width: 40px; height:35px" value="0"></div></div>
+                                    <div class="sheet-col" style="margin-left: -5px"><div class="sheet-texto"><input type="text" name="attr_conhecimentotipo" style="width: 100px; height:35px"></div></div>
+                                    <div class="sheet-col" style="padding-left:10px"><div class="sheet-texto"><input type="text" name="attr_conhecimentotipo_total" value="(@{conhecimentotipo_mod}) + (@{nd} + 3) + (@{int_mod})" style="width: 40px; height:35px" disabled="true"></div></div>
+                                    <div class="sheet-col" style="margin-top:10px; margin-left: -17px; font-size:1.5em"><span>=</span></div>
+                                    <div class="sheet-col" style="margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_conhecimentotipo_graduacao" value="@{nd} + 3" style="width: 40px; height:35px" disabled="true"></div></div>
+                                    <div class="sheet-col" style="margin-top:10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
+                                    <div class="sheet-col" style="margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_conhecimentotipo_int" value="@{int_mod}" style="width: 40px; height:35px" disabled="true"></div></div>
+                                    <div class="sheet-col" style="margin-top:10px; margin-left: -17px; font-size:1.5em"><span>+</span></div>
+                                    <div class="sheet-col" style="margin-left:-20px"><div class="sheet-texto"><input type="text" name="attr_conhecimentotipo_mod" style="width: 40px; height:35px" value="0"></div></div>
                                 </div>
                             </fieldset>
                         </div>
                     </div>
-                    <div class="sheet-row" style="margin-top: -14px">
+                    <div class="sheet-row">
                         <div class="sheet-col">
                             <button style="margin-top:5px; height:37px;" type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Diplomacia}} {{rolagem=[[1d20+@{diplomacia}]]}}">
                             <div class="sheet-block" style="line-height:10px; font-size:0.65em; width: 120px">   
@@ -3337,7 +3337,3 @@ on("sheet:opened remove:repeating_equipamento change:repeating_equipamento:equip
     </div>
     <div class="trpg-footer"></div>
 </rolltemplate>
-
-
-
-
