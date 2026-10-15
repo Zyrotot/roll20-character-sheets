@@ -375,7 +375,8 @@ input.sheet-tab:checked + span::before {
 
 .sheet-oficiosubflag,
 .sheet-conhecimentosubflag,
-.sheet-atuacaosubflag {
+.sheet-atuacaosubflag,
+.sheet-cavalgarsubflag {
     appearance: none;
     -webkit-appearance: none;
     position: absolute;
@@ -393,7 +394,8 @@ input.sheet-tab:checked + span::before {
 
 .sheet-oficiosubflag::before,
 .sheet-conhecimentosubflag::before,
-.sheet-atuacaosubflag::before {
+.sheet-atuacaosubflag::before,
+.sheet-cavalgarsubflag::before {
     content: "l";
     font-family: pictos;
     font-size: 16px;
@@ -405,20 +407,23 @@ input.sheet-tab:checked + span::before {
 
 .sheet-oficiosubflag:checked::before,
 .sheet-conhecimentosubflag:checked::before,
-.sheet-atuacaosubflag:checked::before {
+.sheet-atuacaosubflag:checked::before,
+.sheet-cavalgarsubflag:checked::before {
     color: black;
     background: white;
 }
 
 .sheet-oficiosubflag + span,
 .sheet-conhecimentosubflag + span,
-.sheet-atuacaosubflag + span {
+.sheet-atuacaosubflag + span,
+.sheet-cavalgarsubflag + span {
     display: none !important;
 }
 
 .sheet-oficiosubflag:checked ~ .sheet-suboficio,
 .sheet-conhecimentosubflag:checked ~ .sheet-subconhecimento,
-.sheet-atuacaosubflag:checked ~ .sheet-subatuacao {
+.sheet-atuacaosubflag:checked ~ .sheet-subatuacao,
+.sheet-cavalgarsubflag:checked ~ .sheet-subcavalgar {
     display: block;
     position: relative;
     z-index: 10;
@@ -553,14 +558,16 @@ input.sheet-tab:checked + span::before {
     display: inline-block;
 }
 
-.sheet-suboficio{
+.sheet-suboficio,
+.sheet-subcavalgar{
     width: 100%;
     font-size: 9px;
     height: 35px;
     display:none;
 }
 
-.sheet-suboficio textarea {
+.sheet-suboficio textarea,
+.sheet-subcavalgar textarea {
     width: 95%;
     height: 50px;
     background-image: none;
@@ -571,7 +578,8 @@ input.sheet-tab:checked + span::before {
     margin-bottom:10px;
 }
 
-.sheet-suboficio span {
+.sheet-suboficio span,
+.sheet-subcavalgar span {
     width: 28px;
     padding: 0px 0px 0px 15px;
     display: inline-block;
@@ -631,6 +639,7 @@ input.sheet-tab:checked + span::before {
 
 .sheet-tab2 .sheet-suboficio,
 .sheet-tab2 .sheet-subatuacao,
-.sheet-tab2 .sheet-subconhecimento {
+.sheet-tab2 .sheet-subconhecimento,
+.sheet-tab2 .sheet-subcavalgar {
     white-space: normal;
 }
